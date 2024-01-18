@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            font-family:system-ui; 
+            color:rgb(48, 12, 12);
+        }
+
+        nav{
+            display:flex;
+            align-items: center;
+            justify-content:space-between;
+            padding:14px
+        }
+        
+        nav::before{
+            content:"";
+            background-image:url("landingpage.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 133%;
+            position: absolute;
+            top:0px;
+            left:0px;
+            z-index: -1;
+            height: 102vh;
+            width: 100% ;
+            opacity: 94%;
+            background-position-x:-298px;
+        }
+
+        .navbar-left{
+            display:flex;
+            align-items: center;
+            justify-content:center;
+        }
+
+        .logo{
+            font: size 25pxpx;
+            font-weight:700px;
+            font-family:sans-serif; 
+        }
+
+        .menu{
+            margin:0px 19px;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+
+        }
+
+        ul{
+            display: flex;
+            align-items:center;
+            justify-content:center;
+        }
+
+        ul>li{
+            margin:0px 12px;
+            list-style-type:none;
+            cursor:pointer;
+            font-size:12px;
+            border:2px solid transparent;
+            padding: 5px;
+
+        }
+
+        ul>li:hover{
+            border:2px solid white;
+            border-radius: 4px;
+        }
+
+        .section-home{
+            display:flex;
+            height:90vh;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        h2{
+            font-size: 5rem;
+            font-weight: 100;
+            font-family: sans-serif;
+        }
+
+        p.home{
+            text-align: center;
+            width: 50%;
+        }
+
+        .btn{
+            background: transparent;
+            border: (2px solid black);
+            border-radius: 7px;
+            margin: 17px 2px;
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+
+        .btn:hover{
+            background-color: white;
+            color: black;
+        }
+     
+
+    </style>
+
+</head>
+<body>
+    <nav>
+        <div class="navbar-left">
+            <div class="logo">
+                RCS
+            </div>
+            
+            <div class="menu">
+                <ul>
+                    <li>HOME</li>
+                    <li>PRODUCTS</li>
+                    <li>PRICING</li>
+                    <li>BEST OFFERS</li>
+                    <li>OUR SITES</li>
+                    <li>ABOUT</li>
+                    <li>CONTACTS</li>
+                    <li>REGISTER</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Home section-->
+   
+        <section class="section-home">
+            <span>Welcome to</span>
+            <h2>
+                RICH CROP SCIENCE
+            </h2>
+
+            <p class="home">
+                The agricultural heart of India from Soul to Soil<br>
+                Rich quality crops for farmers and thus giving the justice to the name "RICH CROP SCIENCE".
+            </p>
+
+            <div class="button-group">
+                <button class ="btn">
+                    Book Your Order
+                </button>
+            </div>
+            
+        </section>    
+    
+</body>
+</html>
